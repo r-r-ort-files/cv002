@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <style>
+        *{
+            margin: 4%; /*margen de todo el estilo*/
+            font-family: Georgia, 'Times New Roman', Times, serif; /*fuente general*/
+            line-height: 30px; /*interlineado*/ 
+        }
+        p{ /*parrafo*/
+            text-align:justify;  /*texto justificado*/
+        }
+        body{ /**/
+            border-color:rgba(0, 0, 0, 0.411); /*margen de hoja*/
+            border-style: ridge; /*solid, ridge*/
+            border-width: 7px;
+            border-radius: 45px;
+        }
+        head{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+             margin-top: 80px;
+            color:black;
+            text-align: center;
+            font-size:60px;
+        }
+        h3{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:rgb(0, 0, 0);
+            background-color:rgb(255, 255, 255);
+            padding: .9%;
+            border-radius: 20px;
+            text-align: center;
+        }
+         
+        img{ /*configuracion de imagen*/
+            max-width: 100%;
+            max-height:100%;
+            border-radius:100%;
+            margin-left:130px; /*configura separacion a la izquierda*/
+           
+        }
+        .foto{
+            width:100%;
+            height:450px;
+            margin-left: auto;
+        }
+        .logo{ /*modificando////////////////*/
+            width:100%;
+            height:450px;
+            margin-left: 20%;
+            margin-bottom: -30%;
+    
+        }
+        /*.foto_univer{
+            width:50%;
+            height:50%;
+            margin-left: 60%;
+            margin-top: -30%;
+        }*/
+        span{
+            font-weight:bold;
+        }
+        #raulromanortiz{
+            text-align: center;
+            font-size:xx-large;
+        }
+        #ingeniero_electronico{
+            background-color: white;
+            color:rgb(46, 23, 253);
+            border: 0;
+            font-size:xx-large;
+            text-align: center;
+        }
+        #ingeniero_software{
+            background-color: white;
+            color:rgb(0, 0, 0);
+            border: 0;
+            font-size:xx-large;
+            text-align: center;
+        }
+      
+       .ejercicios_realizados{
+            background-color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:white;
+            padding: 2%;
+            border-radius: 20px;
+            text-align: center;
+            margin-top: 100px;
+        }
+    
+            .suma_de_numeros{ /*1*/
+            border-radius: 20px;
+            border-color: rgba(0, 0, 0, 0.589);
+            border-style: solid;
+            border-width: 4px;
+            padding: 2px;
+            margin: 10px
+        }
+        .resta_de_numeros{/*2*/
+            border-radius: 20px;
+            border-color: rgba(0, 0, 0, 0.589);
+            border-style: solid;
+            border-width: 4px;
+            padding: 2px;
+            margin: 10px
+        }
+        .multiplicacion_de_numeros{ /*3*/
+            border-radius: 20px;
+            border-color: rgba(0, 0, 0, 0.589);
+            border-style: solid;
+            border-width: 4px;
+            padding: 2px;
+            margin: 10px        
+        }
+         .division_de_numeros{ /*4*/
+            border-radius: 20px;
+            border-color: rgba(0, 0, 0, 0.589);
+            border-style: solid;
+            border-width: 4px;
+            padding: 2px;
+            margin: 10px        
+        }
+         .numero_elevado_potencia{ /*5*/
+            border-radius: 20px;
+            border-color: rgba(0, 0, 0, 0.589);
+            border-style: solid;
+            border-width: 4px;
+            padding: 2px;
+            margin: 10px        
+        }
+         .raiz_numero{ /*6*/
+            border-radius: 20px;
+            border-color: rgba(0, 0, 0, 0.589);
+            border-style: solid;
+            border-width: 4px;
+            padding: 2px;
+            margin: 10px        
+        }
+
+     .area_cuadrado{ /*7*/
+            border-radius: 20px;
+            border-color: rgba(0, 0, 0, 0.589);
+            border-style: solid;
+            border-width: 4px;
+            padding: 2px;
+            margin: 10px        
+        }
+        .area_triangulo{ /*8*/
+            border-radius: 20px;
+            border-color: rgba(0, 0, 0, 0.589);
+            border-style: solid;
+            border-width: 4px;
+            padding: 2px;
+            margin: 10px        
+        }
+
+        .area_circulo{ /*9*/
+            border-radius: 20px;
+            border-color: rgba(0, 0, 0, 0.589);
+            border-style: solid;
+            border-width: 4px;
+            padding: 2px;
+            margin: 10px        
+        }
+
+         .volumen_cubo{ /*10*/
+            border-radius: 20px;
+            border-color: rgba(0, 0, 0, 0.589);
+            border-style: solid;
+            border-width: 4px;
+            padding: 2px;
+            margin: 10px        
+        }
+         .volumen_piramide{ /*11*/
+            border-radius: 20px;
+            border-color: rgba(0, 0, 0, 0.589);
+            border-style: solid;
+            border-width: 4px;
+            padding: 2px;
+            margin: 10px        
+        }
+         .volumen_cilindro{ /*12*/
+            border-radius: 20px;
+            border-color: rgba(0, 0, 0, 0.589);
+            border-style: solid;
+            border-width: 4px;
+            padding: 2px;
+            margin: 10px        
+        }
+
+        .datos{ /*personales//////////*/
+         background-color: rgb(15, 7, 87);
+         border-radius: 25px;
+         color: white;
+         width: 500px; /*ancho del contenedor azul*/
+         margin-top: -350px;
+         margin-left: 450px;
+         margin-right: 450px;
+         padding: 8px;
+         align-content:center;
+        }
+        .formacion{
+            background-color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:white;
+            padding: .9%;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .univer{
+            text-align: center;
+        }
+      ul{
+        list-style-type:square;
+        margin: auto;
+      }
+      .cualidades{
+        background-color: blue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color:white;
+            padding: .9%;
+            border-radius: 20px;
+            text-align: center;
+      }
+    table{ 
+        border-color: rgb(187, 186, 186);
+        border-width:5px;
+        border-style: solid;
+        margin: auto;
+    }
+    thead{
+        background-color: rgb(199, 199, 199);
+    }
+    tbody{
+        background-color: rgb(110, 181, 240);
+    }
+    td{
+        border-color: rgb(187, 186, 186);
+        border-width: 5px;
+        border-style: solid;
+        text-align: center;
+    }
+    th{
+        border-color: rgb(187, 186, 186);
+        border-width: 5px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    </style>
+</head>
+
+<body>
+    <header> <!--nombre, carrera y titulo del documento, fotografia-->
+        <hgroup>
+            <h1>PORTAFOLIO SOFTWARE</h1> <!--cambiar margen-->
+        <div class="logo">
+            <img src="logo_2_univer.jpg" alt="UNIVER">
+        </div>
+            <h2 id="raulromanortiz">Raul Román Ortiz</h2>
+            <h2 id="ingeniero_electronico">Ingeniero Electronico</h2>
+            <h2 id="ingeniero_software">Ingeniero en desarrollo de software</h2>
+        </hgroup>
+    </header>
+    <section>
+         <div class="foto">
+            <img src="perfil.jpg" alt="Raul Roman Ortiz">
+        </div>
+    </section>
+    <section class="personales"><!--telefono, direccion,correo electronico, edad, fecha de nacimiento, estado civil, CURP, RFC, licencia, disponibilidad--> 
+        <div class="datos">
+            <ul>
+                <li><span>Teléfono móvil:</span>3328136292</li>
+                <li><span>Correo:</span>raulromanortiz9@gmail.com</li>
+                <li><span>Dirección:</span> Clarín 1081, colonia 8 de Julio, Guadalajara, Jalisco.</li>
+                <li> <span>Edad:</span>30 años</li>
+                <li> <span>Fecha de nacimiento:</span>19/Noviembre/1994</li>
+                <li><span>Nacionalidad:</span> mexicano</li>
+            </ul>
+        </div>
+    </section>
+<hr>
+<main>
+    <section>
+           <h2 class="ejercicios_realizados">Ejercicios realizados en Python</h2>
+           <div>
+            <ol>
+                <li><a href="#suma">SUMA DE NUMEROS CON DECIMALES</a></li>
+                <li><a href="#resta">RESTA DE NUMEROS ENTEROS</a></li>
+                <li><a href="#multiplicacion">MULTIPLICACION DE NUMEROS CON DECIMALES</a></li>
+                <li><a href="#division">DIVISION DE NUMEROS CON DECIMALES</a></li>
+                <li><a href="#potencia">NUMERO ELEVADO A UNA POTENCIA</a></li>
+                <li><a href="#raiz">RAIZ DE UN NUMERO</a></li>
+                <li><a href="#cuadrado">AREA DE UN CUADRADO</a></li>
+                <li><a href="#triangulo">AREA DE UN TRIANGULO</a></li>
+                <li><a href="#circulo">AREA DE UN CIRCULO</a></li>
+                <li><a href="#cubo">VOLUMEN DE UN CUBO</a></li>
+                <li><a href="#piramide">VOLUMEN DE PIRAMIDE DE BASE CUADRADA</a></li>
+                <li><a href="#cilindro">VOLUMEN DE UN CILINDRO</a></li>
+            </ol>
+           </div>
+
+           <div class="suma_de_numeros">
+           <h3 id="suma"><a href="suma_2_numeros.html">SUMA DE NUMEROS CON DECIMALES</a></h3><!--1-->
+           <p>Suma de numeros enteros usando python. Se realiza la suma de numeros enteros, declaramos variables y agregamos imputs para el usuario.<br></p>
+            </div>
+
+
+           <div class="resta_de_numeros">
+           <h3 id="resta"><a href="resta_2_numeros.html">RESTA DE NUMEROS ENTEROS</a></h3><!--2-->
+           <p>
+            Resta de numeros enteros usando python. Se realiza la resta de numeros enteros, declaramos variables y agregamos imputs para el usuario.
+           </p>
+        </div>
+
+
+        <div class="multiplicacion_de_numeros"> <!--3-->
+           <h3 id="multiplicacion"><a href="multiplicacion_2_numeros.html">MULTIPLICACION DE NUMEROS CON DECIMALES</a></h3>
+           <p>
+            Multiplicacion de numeros con decimales con python. Se realiza la multiplicaion de numeros flotantes, declaramos variables y agregamos imputs para el usuario.
+           </p>
+        </div>
+
+
+         <div class="division_de_numeros"> <!--4-->
+           <h3 id="division"><a href="division_2_numeros.html">DIVISION DE NUMEROS CON DECIMALES</a></h3>
+           <p>
+            Division de numeros con decimales con python. Se realiza la Division de numeros flotantes, declaramos variables y agregamos imputs para el usuario.
+           </p>
+        </div>
+
+        <div class="numero_elevado_potencia"> <!--5-->
+           <h3 id="potencia"><a href="numero_elevado_ptencia.html">NUMERO ELEVADO A UNA POTENCIA</a></h3>
+           <p>
+            Elevación de numeros decimales con python. Se realiza la elevacion de numeros flotantes, declaramos variables y agregamos imputs para el usuario.
+           </p>
+           </div>
+
+        <div class="raiz_numero"><!--6-->
+           <h3 id="raiz"><a href="raiz_de_numero.html">RAIZ DE UN NUMERO</a></h3>
+           <p>
+            Raiz de numeros con decimales con python. Se realiza la raiz de numeros flotantes, declaramos variables y agregamos imputs para el usuario.
+           </p>
+        </div>
+
+         <div class="area_cuadrado"><!--7-->
+           <h3 id="cuadrado"><a href="area_cuadrado.html">AREA DE UN CUADRADO</a></h3>
+           <p>
+            Area de un cuadrado. Se realizan los imputs con decimales para el usuario. Se realiza la operacion para el calculo del area del cuadrado.
+           </p>
+        </div>
+
+        <div class="area_triangulo"><!--8-->
+           <h3 id="triangulo"><a href="area_triangulo.html">AREA DE UN TRIANGULO</a></h3>
+           <p>
+            Area de un triangulo. Se realizan los imputs con decimales para el usuario. Se realiza la operacion para el calculo del area de un triangulo.
+           </p>
+        </div>
+        
+         <div class="area_circulo"><!--9-->
+           <h3 id= circulo><a href="area_circulo.html">AREA DE UN CIRCULO</a></h3>
+           <p>
+            Area de un circulo. Se realizan los imputs con decimales para el usuario. Se realiza la operacion para el calculo del area de un circulo.
+           </p>
+        </div> 
+        
+        <div class="volumen_cubo"><!--10-->
+           <h3 id="cubo"><a href="volumen_cubo.html">VOLUMEN DE UN CUBO</a></h3>
+           <p>
+            Volumen de un cubo. Se realizan los imputs con decimales para el usuario. Se realiza la operacion para el calculo del volumen de un cubo.
+           </p>
+        </div>
+
+        <div class="volumen_piramide"><!--11-->
+           <h3 id="piramide"><a href="volumen_piramide.html">VOLUMEN DE PIRAMIDE DE BASE CUADRADA</a></h3>
+           <p>
+            Volumen de piramide. Se realizan los imputs con decimales para el usuario. Se realiza la operacion para el calculo del volumen de una piramide de base cuadrada.
+           </p>
+        </div>  
+
+         <div class="volumen_cilindro"><!--12-->
+           <h3 id="cilindro"><a href="volumen_cilindro.html">VOLUMEN DE UN CILINDRO</a></h3>
+           <p>
+            Volumen de un cilindro. Se realizan los imputs con decimales para el usuario. Se realiza la operacion para el calculo del volumen de un cilindro.
+           </p>
+        </div>  
+    </section> 
+</main>
+    <section><!--formacion academica-->
+        <div>
+           <h2 class="formacion">Formacion academica</h2> 
+           <h3> AGOSTO 2013-DICIEMBRE 2018 - INSTITUTO TECNOLÓGICO DE MINATITLÁN</h3>
+           <p>Boulevard Institutos Tecnológicos, Col. Oaxaqueña, Minatitlán, Veracruz</p>
+             <ul>
+            <li>CERTIFICADO: INGENIERO ELECTRONICO</li>
+            <li>ESPECIALIDAD: INSTRUMENTACION Y CONTROL DE PROCESOS</li>
+             <h3>RESIDENCIAS/PRACTICAS PROFESIONALES (AGOSTO-DICIEMBRE 2018)</h3>
+           <p>Como practicante profesional en el laboratorio de instrumentación y control de procesos en la realización de Mantenimiento
+            y optimización de la estación de prácticas de control de flujo, así como la Instalación de un controlador con convertidor de 
+            corriente-presión (I/P) para la realización de prácticas de medición de flujo</p>
+           
+           </ul>
+        <div class="univer">
+            <h3>SEPTIEMBRE 2024-FECHA ACTUAL - UNIVER</h3>
+           
+             <ul>
+            <li>Actualmente cursando la carrera de ingenieria en software y aplicaciones web</li>
+            <li>Tercer cuatrinestre en proceso</li>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.872273972218!2d-103.29953272648352!3d20.634062380918284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b2513bfd333b%3A0x416f73487431590a!2sUniversidad%20UNIVER%20-%20Tlaquepaque!5e0!3m2!1ses!2smx!4v1749287941590!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Av Francisco Silva Romero 395, Lomas de Tlaquepaque San Pedro Tlaquepaque, Jal.</p>
+           </ul>
+        </div>
+            <h2>Cursos y diplomas (ejemplo)</h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Curso/complemento</th>
+                    <th>Lugar</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo web</td>
+                    <td>TEC-Milenio/BEDU</td>
+                </tr>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo Web</td>
+                    <td>Guadalajara, Jal</td>
+                </tr>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo Web</td>
+                    <td>Guadalajara, Jal</td>
+                </tr>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo Web</td>
+                    <td>Guadalajara, Jal</td>
+                </tr>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo Web</td>
+                    <td>Guadalajara, Jal</td>
+                </tr>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo Web</td>
+                    <td>Guadalajara, Jal</td>
+                </tr>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo Web</td>
+                    <td>Guadalajara, Jal</td>
+                </tr>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo Web</td>
+                    <td>Guadalajara, Jal</td>
+                </tr>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo Web</td>
+                    <td>Guadalajara, Jal</td>
+                </tr>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo Web</td>
+                    <td>Guadalajara, Jal</td>
+                </tr>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo Web</td>
+                    <td>Guadalajara, Jal</td>
+                </tr>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo Web</td>
+                    <td>Guadalajara, Jal</td>
+                </tr>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo Web</td>
+                    <td>Guadalajara, Jal</td>
+                </tr>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo Web</td>
+                    <td>Guadalajara, Jal</td>
+                </tr>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo web</td>
+                    <td>Guadalajara, Jal</td>
+                </tr>
+                <tr>
+                    <th>27/julio/2022</th>
+                    <td>Desarrollo Web</td>
+                    <td>Guadalajara, Jal</td>
+                </tr>
+            </tbody>
+        </table>
+    </section> 
+     <footer class="footer">
+        <h2 class="cualidades">Cualidades</h2>
+        <ul>
+            <li>Creativo</li>
+            <li>Inteligente</li>
+            <li>Social</li>
+            <li>Perseptivo</li>
+            <li>Persistente</li>
+        </ul>
+     </footer> <!--Cualidades-->
+</body>
+</html>
