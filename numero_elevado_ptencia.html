@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero elevado a una potencia</title> <!-- cambio-->
+    <style>
+         *{
+            width: 400px;
+
+        }
+        .parrafo{
+            color: green;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Numero elevado a una potencia</h1> <!-- cambio-->
+    <p>Se muestra diseño y codigo en pyton a continuación:</p>
+    <form action="/elevar" method="post"> <!-- cambio-->
+        <label for="num1">Numero:</label>
+        <input type="number" id="num1" name="num1" required>
+        <br><br>
+        <label for="num2">Valor potencia:</label>
+        <input type="number" id="num2" name="num2" required>
+        <br><br>
+        <button type="submit">Elevar</button> <!-- cambio-->
+    </form>
+    <p class="parrafo">
+#nombre:Raúl Román Ortiz <br>
+#ID: 0000029384<br>
+#Programa:numero elevado a una potencia<br>
+a=float(input("ingresa un numero: "))<br>
+b=float(input("ingresa el valor de la potencia: "))<br>
+potencia=a**b<br>
+
+print("el valor es:" , potencia)
+    </p>
+     <br>
+    <p>Diagrama de flujo:</p>
+<section>
+    <div>
+        <img src="flujo_pseudo_potencia.jpg" alt="flujo">
+    </div>
+</body>
+</html>
+
+
+
+
+
